@@ -39,7 +39,14 @@ class ViewController: UIViewController {
         refreshStationData()
     }
     
- 
+    func getTimeString () -> String
+    {
+        let dateFormatter : DateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "HH:mm:ss"
+        let date = Date()
+        return dateFormatter.string(from: date)
+    }
+    
     
     // These shared variable dictionaries  are accessed from multiple threads as such
     // need to be made thread safe for writing
@@ -109,6 +116,7 @@ class ViewController: UIViewController {
                        let infoArray = xph.parseTrainData(xmlData: data, direction: "Northbound")
                        self.stationsOfInterestNorthbound[station] = infoArray
                         DispatchQueue.main.async {
+                            self.updateTime.text = self.getTimeString()
                             self.myTableView.reloadData()
                         }
                         
@@ -116,6 +124,7 @@ class ViewController: UIViewController {
                         let infoArray = xph.parseTrainData(xmlData: data, direction: "Southbound")
                         self.stationsOfInterestSouthbound[station] = infoArray
                         DispatchQueue.main.async {
+                            self.updateTime.text = self.getTimeString()
                             self.myTableView.reloadData()
                         }
                     }

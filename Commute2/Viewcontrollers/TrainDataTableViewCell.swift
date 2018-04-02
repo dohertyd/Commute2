@@ -8,6 +8,8 @@
 
 import UIKit
 
+// Using a custom class here for the display cell
+//
 class TrainDataTableViewCell: UITableViewCell {
 
     @IBOutlet weak var minutes: UILabel!

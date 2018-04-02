@@ -12,6 +12,8 @@ import Foundation
 class XmlParserHandler : NSObject
 {
 
+    //  Need to make this shared data thread safe too!
+    //
     var xmlText:String = ""
     var StationDataArray:[StationData] = []
     var currentStationData:StationData!
@@ -46,7 +48,6 @@ extension XmlParserHandler : XMLParserDelegate
         {
             currentStationData = StationData()
         }
-
     }
     
     func parser(_ parser: XMLParser, didEndElement elementName: String, namespaceURI: String?, qualifiedName qName: String?)

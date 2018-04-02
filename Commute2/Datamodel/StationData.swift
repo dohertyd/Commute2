@@ -8,6 +8,9 @@
 
 import Foundation
 
+// The structure of data coming back from the XML API
+//
+
 struct StationData {
     var   Servertime:String = ""
     var   Traincode:String = ""
