@@ -1,0 +1,6 @@
+framework module Pods_Commute2 {
+  umbrella header "Pods-Commute2-umbrella.h"
+
+  export *
+  module * { export * }
+}

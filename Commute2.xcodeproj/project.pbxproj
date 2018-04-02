@@ -1,0 +1,688 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		BE188DCA2062D78B00B851D5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE188DC92062D78B00B851D5 /* AppDelegate.swift */; };
+		BE188DCC2062D78B00B851D5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE188DCB2062D78B00B851D5 /* ViewController.swift */; };
+		BE188DCF2062D78B00B851D5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE188DCD2062D78B00B851D5 /* Main.storyboard */; };
+		BE188DD22062D78B00B851D5 /* Commute2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BE188DD02062D78B00B851D5 /* Commute2.xcdatamodeld */; };
+		BE188DD42062D78B00B851D5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BE188DD32062D78B00B851D5 /* Assets.xcassets */; };
+		BE188DD72062D78B00B851D5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BE188DD52062D78B00B851D5 /* LaunchScreen.storyboard */; };
+		BE188DE22062D78B00B851D5 /* Commute2Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE188DE12062D78B00B851D5 /* Commute2Tests.swift */; };
+		BE188DF4206435FC00B851D5 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE188DF3206435FC00B851D5 /* Router.swift */; };
+		BE1DF2232065488B009EF1A4 /* XmlparserHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DF2222065488B009EF1A4 /* XmlparserHandler.swift */; };
+		BE1DF225206BDC76009EF1A4 /* StationData.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DF224206BDC76009EF1A4 /* StationData.swift */; };
+		BE1DF227206D051B009EF1A4 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DF226206D051B009EF1A4 /* Constants.swift */; };
+		BE1DF229207017DD009EF1A4 /* TrainDataTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE1DF228207017DD009EF1A4 /* TrainDataTableViewCell.swift */; };
+		EE07DC5C5A54D9FA53D90AD2 /* Pods_Commute2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1B18831E0C4BED1B891D7C60 /* Pods_Commute2.framework */; };
+		F5DF72BF383608EFBBE8A35F /* Pods_Commute2Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AB2C4294CD234BCD0366F687 /* Pods_Commute2Tests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		BE188DDE2062D78B00B851D5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BE188DBE2062D78B00B851D5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = BE188DC52062D78B00B851D5;
+			remoteInfo = Commute2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1B18831E0C4BED1B891D7C60 /* Pods_Commute2.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commute2.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7314AB49211274949992EE11 /* Pods-Commute2Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commute2Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Commute2Tests/Pods-Commute2Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BD229332F294E0727287E5C /* Pods-Commute2Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commute2Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Commute2Tests/Pods-Commute2Tests.release.xcconfig"; sourceTree = "<group>"; };
+		A7CA9049EE408D82A1E980DA /* Pods-Commute2.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commute2.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Commute2/Pods-Commute2.debug.xcconfig"; sourceTree = "<group>"; };
+		AB2C4294CD234BCD0366F687 /* Pods_Commute2Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Commute2Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE188DC62062D78B00B851D5 /* Commute2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Commute2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE188DC92062D78B00B851D5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		BE188DCB2062D78B00B851D5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BE188DCE2062D78B00B851D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		BE188DD12062D78B00B851D5 /* Commute2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Commute2.xcdatamodel; sourceTree = "<group>"; };
+		BE188DD32062D78B00B851D5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		BE188DD62062D78B00B851D5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		BE188DD82062D78B00B851D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE188DDD2062D78B00B851D5 /* Commute2Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Commute2Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		BE188DE12062D78B00B851D5 /* Commute2Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commute2Tests.swift; sourceTree = "<group>"; };
+		BE188DE32062D78B00B851D5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BE188DF3206435FC00B851D5 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		BE1DF2222065488B009EF1A4 /* XmlparserHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XmlparserHandler.swift; sourceTree = "<group>"; };
+		BE1DF224206BDC76009EF1A4 /* StationData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StationData.swift; sourceTree = "<group>"; };
+		BE1DF226206D051B009EF1A4 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		BE1DF228207017DD009EF1A4 /* TrainDataTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainDataTableViewCell.swift; sourceTree = "<group>"; };
+		D4BABA5EA7A8955D50B333D8 /* Pods-Commute2.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Commute2.release.xcconfig"; path = "Pods/Target Support Files/Pods-Commute2/Pods-Commute2.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		BE188DC32062D78B00B851D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE07DC5C5A54D9FA53D90AD2 /* Pods_Commute2.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE188DDA2062D78B00B851D5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F5DF72BF383608EFBBE8A35F /* Pods_Commute2Tests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		611FB47F720FBCE56B3648D7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A7CA9049EE408D82A1E980DA /* Pods-Commute2.debug.xcconfig */,
+				D4BABA5EA7A8955D50B333D8 /* Pods-Commute2.release.xcconfig */,
+				7314AB49211274949992EE11 /* Pods-Commute2Tests.debug.xcconfig */,
+				8BD229332F294E0727287E5C /* Pods-Commute2Tests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BE188DBD2062D78B00B851D5 = {
+			isa = PBXGroup;
+			children = (
+				BE188DC82062D78B00B851D5 /* Commute2 */,
+				BE188DE02062D78B00B851D5 /* Commute2Tests */,
+				BE188DC72062D78B00B851D5 /* Products */,
+				611FB47F720FBCE56B3648D7 /* Pods */,
+				C60A0BB4185989546CC38FB6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		BE188DC72062D78B00B851D5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DC62062D78B00B851D5 /* Commute2.app */,
+				BE188DDD2062D78B00B851D5 /* Commute2Tests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BE188DC82062D78B00B851D5 /* Commute2 */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DF2206435A600B851D5 /* Networking */,
+				BE188DF12064359700B851D5 /* Supporting Files */,
+				BE188DF02062D94200B851D5 /* Resources */,
+				BE188DEF2062D92F00B851D5 /* Datamodel */,
+				BE188DEE2062D90A00B851D5 /* Storyboards */,
+				BE188DED2062D8F100B851D5 /* Viewcontrollers */,
+				BE188DEC2062D8E600B851D5 /* Appdelegate */,
+			);
+			path = Commute2;
+			sourceTree = "<group>";
+		};
+		BE188DE02062D78B00B851D5 /* Commute2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DE12062D78B00B851D5 /* Commute2Tests.swift */,
+				BE188DE32062D78B00B851D5 /* Info.plist */,
+			);
+			path = Commute2Tests;
+			sourceTree = "<group>";
+		};
+		BE188DEC2062D8E600B851D5 /* Appdelegate */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DC92062D78B00B851D5 /* AppDelegate.swift */,
+			);
+			path = Appdelegate;
+			sourceTree = "<group>";
+		};
+		BE188DED2062D8F100B851D5 /* Viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DCB2062D78B00B851D5 /* ViewController.swift */,
+				BE1DF228207017DD009EF1A4 /* TrainDataTableViewCell.swift */,
+			);
+			path = Viewcontrollers;
+			sourceTree = "<group>";
+		};
+		BE188DEE2062D90A00B851D5 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DD52062D78B00B851D5 /* LaunchScreen.storyboard */,
+				BE188DCD2062D78B00B851D5 /* Main.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		BE188DEF2062D92F00B851D5 /* Datamodel */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DD02062D78B00B851D5 /* Commute2.xcdatamodeld */,
+				BE1DF2222065488B009EF1A4 /* XmlparserHandler.swift */,
+				BE1DF224206BDC76009EF1A4 /* StationData.swift */,
+				BE1DF226206D051B009EF1A4 /* Constants.swift */,
+			);
+			path = Datamodel;
+			sourceTree = "<group>";
+		};
+		BE188DF02062D94200B851D5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DD32062D78B00B851D5 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		BE188DF12064359700B851D5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DD82062D78B00B851D5 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BE188DF2206435A600B851D5 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				BE188DF3206435FC00B851D5 /* Router.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		C60A0BB4185989546CC38FB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1B18831E0C4BED1B891D7C60 /* Pods_Commute2.framework */,
+				AB2C4294CD234BCD0366F687 /* Pods_Commute2Tests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		BE188DC52062D78B00B851D5 /* Commute2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE188DE62062D78B00B851D5 /* Build configuration list for PBXNativeTarget "Commute2" */;
+			buildPhases = (
+				D337A2B747BEE410638328ED /* [CP] Check Pods Manifest.lock */,
+				BE188DC22062D78B00B851D5 /* Sources */,
+				BE188DC32062D78B00B851D5 /* Frameworks */,
+				BE188DC42062D78B00B851D5 /* Resources */,
+				6ECF2B0AF4B000EEBEE36335 /* [CP] Embed Pods Frameworks */,
+				78F71EA7362F68C2EC241DC9 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Commute2;
+			productName = Commute2;
+			productReference = BE188DC62062D78B00B851D5 /* Commute2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		BE188DDC2062D78B00B851D5 /* Commute2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE188DE92062D78B00B851D5 /* Build configuration list for PBXNativeTarget "Commute2Tests" */;
+			buildPhases = (
+				89E29D490507F7954426C264 /* [CP] Check Pods Manifest.lock */,
+				BE188DD92062D78B00B851D5 /* Sources */,
+				BE188DDA2062D78B00B851D5 /* Frameworks */,
+				BE188DDB2062D78B00B851D5 /* Resources */,
+				8209E6325589154EA14B7313 /* [CP] Embed Pods Frameworks */,
+				811B3299AA83E3B517EAD32D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				BE188DDF2062D78B00B851D5 /* PBXTargetDependency */,
+			);
+			name = Commute2Tests;
+			productName = Commute2Tests;
+			productReference = BE188DDD2062D78B00B851D5 /* Commute2Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BE188DBE2062D78B00B851D5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Derek Doherty";
+				TargetAttributes = {
+					BE188DC52062D78B00B851D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					BE188DDC2062D78B00B851D5 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = BE188DC52062D78B00B851D5;
+					};
+				};
+			};
+			buildConfigurationList = BE188DC12062D78B00B851D5 /* Build configuration list for PBXProject "Commute2" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = BE188DBD2062D78B00B851D5;
+			productRefGroup = BE188DC72062D78B00B851D5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BE188DC52062D78B00B851D5 /* Commute2 */,
+				BE188DDC2062D78B00B851D5 /* Commute2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		BE188DC42062D78B00B851D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE188DD72062D78B00B851D5 /* LaunchScreen.storyboard in Resources */,
+				BE188DD42062D78B00B851D5 /* Assets.xcassets in Resources */,
+				BE188DCF2062D78B00B851D5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE188DDB2062D78B00B851D5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		6ECF2B0AF4B000EEBEE36335 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Commute2/Pods-Commute2-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Commute2/Pods-Commute2-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		78F71EA7362F68C2EC241DC9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Commute2/Pods-Commute2-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		811B3299AA83E3B517EAD32D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Commute2Tests/Pods-Commute2Tests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8209E6325589154EA14B7313 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Commute2Tests/Pods-Commute2Tests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89E29D490507F7954426C264 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Commute2Tests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D337A2B747BEE410638328ED /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Commute2-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE188DC22062D78B00B851D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE188DF4206435FC00B851D5 /* Router.swift in Sources */,
+				BE1DF2232065488B009EF1A4 /* XmlparserHandler.swift in Sources */,
+				BE1DF229207017DD009EF1A4 /* TrainDataTableViewCell.swift in Sources */,
+				BE188DD22062D78B00B851D5 /* Commute2.xcdatamodeld in Sources */,
+				BE188DCC2062D78B00B851D5 /* ViewController.swift in Sources */,
+				BE1DF227206D051B009EF1A4 /* Constants.swift in Sources */,
+				BE1DF225206BDC76009EF1A4 /* StationData.swift in Sources */,
+				BE188DCA2062D78B00B851D5 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE188DD92062D78B00B851D5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE188DE22062D78B00B851D5 /* Commute2Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		BE188DDF2062D78B00B851D5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = BE188DC52062D78B00B851D5 /* Commute2 */;
+			targetProxy = BE188DDE2062D78B00B851D5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		BE188DCD2062D78B00B851D5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE188DCE2062D78B00B851D5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		BE188DD52062D78B00B851D5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				BE188DD62062D78B00B851D5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		BE188DE42062D78B00B851D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		BE188DE52062D78B00B851D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		BE188DE72062D78B00B851D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A7CA9049EE408D82A1E980DA /* Pods-Commute2.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMA2HBWFND;
+				INFOPLIST_FILE = "$(SRCROOT)/Commute2/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.derek.Commute2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		BE188DE82062D78B00B851D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D4BABA5EA7A8955D50B333D8 /* Pods-Commute2.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMA2HBWFND;
+				INFOPLIST_FILE = "$(SRCROOT)/Commute2/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.derek.Commute2;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		BE188DEA2062D78B00B851D5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7314AB49211274949992EE11 /* Pods-Commute2Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMA2HBWFND;
+				INFOPLIST_FILE = Commute2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.derek.Commute2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commute2.app/Commute2";
+			};
+			name = Debug;
+		};
+		BE188DEB2062D78B00B851D5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BD229332F294E0727287E5C /* Pods-Commute2Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = PMA2HBWFND;
+				INFOPLIST_FILE = Commute2Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.derek.Commute2Tests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Commute2.app/Commute2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		BE188DC12062D78B00B851D5 /* Build configuration list for PBXProject "Commute2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE188DE42062D78B00B851D5 /* Debug */,
+				BE188DE52062D78B00B851D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE188DE62062D78B00B851D5 /* Build configuration list for PBXNativeTarget "Commute2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE188DE72062D78B00B851D5 /* Debug */,
+				BE188DE82062D78B00B851D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE188DE92062D78B00B851D5 /* Build configuration list for PBXNativeTarget "Commute2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				BE188DEA2062D78B00B851D5 /* Debug */,
+				BE188DEB2062D78B00B851D5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		BE188DD02062D78B00B851D5 /* Commute2.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				BE188DD12062D78B00B851D5 /* Commute2.xcdatamodel */,
+			);
+			currentVersion = BE188DD12062D78B00B851D5 /* Commute2.xcdatamodel */;
+			path = Commute2.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = BE188DBE2062D78B00B851D5 /* Project object */;
+}
